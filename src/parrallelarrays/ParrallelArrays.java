@@ -49,8 +49,13 @@ public class ParrallelArrays {
                     else{
                         i++;
                     }
+                    if(i>6){
+                        throw new Exception();
+                    }
+                    
                 }
-                
+                buffer.close();
+                buffer2.close();
                 System.out.println("Result: "+data);
                 valid = true;
             }
